@@ -21,5 +21,7 @@ export const PAGES_IMAGES = {
 
 export const HEADER_AUTH_LINKS = {
   REGISTER: 'http://galcarlite.paydirect.io/registrations/individuals',
+  REGISTER_BUSINESS: 'http://galcarlite.paydirect.io/registrations/corporates',
+  REGISTER_PERSONAL: 'http://galcarlite.paydirect.io/registrations/individuals',
   LOGIN: 'http://galcarlite.paydirect.io/',
 };

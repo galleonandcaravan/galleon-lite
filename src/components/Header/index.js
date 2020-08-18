@@ -19,6 +19,14 @@ class Header extends Component {
     activePage: ''
   };
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      dropdownActive: false,
+    }
+  }
+
   handleMenuItem = event => {
     event.preventDefault();
     event.stopPropagation();
@@ -33,8 +41,15 @@ class Header extends Component {
     }
   };
 
+  toggleDropdown = () => {
+    const { dropdownActive } = this.state;
+
+    this.setState({ dropdownActive: !dropdownActive });
+  };
+
   render() {
     const { activePage, popupVisibleBlock, togglePopup } = this.props;
+    const { dropdownActive } = this.state;
 
     return (
       <div className={styles.header}>
@@ -80,7 +95,20 @@ class Header extends Component {
 
           <ul className={styles.auth}>
             <li className={styles.auth__item}>
-              <a href={HEADER_AUTH_LINKS.REGISTER}>Register</a>
+              <div className={styles.dropdown}>
+                <span className={styles.dropdownAction} onClick={this.toggleDropdown}>Register</span>
+
+                {dropdownActive && (
+                  <ul>
+                    <li>
+                      <a href={HEADER_AUTH_LINKS.REGISTER_BUSINESS}>Business</a>
+                    </li>
+                    <li>
+                      <a href={HEADER_AUTH_LINKS.REGISTER_PERSONAL}>Personal</a>
+                    </li>
+                  </ul>
+                )}
+              </div>
             </li>
 
             <li className={styles.auth__item}>
