@@ -106,11 +106,24 @@ class HeaderMobile extends Component {
 
                 <ul className={styles.auth}>
                   <li className={styles.auth__item}>
+                    <span>
+                      Register
+                    </span>
+                  </li>
+                  <li className={cn(styles.auth__item, styles.inner)}>
                     <a
-                      href={HEADER_AUTH_LINKS.REGISTER}
+                      href={HEADER_AUTH_LINKS.REGISTER_BUSINESS}
                       onClick={this.toggleMenuVisible}
                     >
-                      Register
+                      Business
+                    </a>
+                  </li>
+                  <li className={cn(styles.auth__item, styles.inner)}>
+                    <a
+                      href={HEADER_AUTH_LINKS.REGISTER_PERSONAL}
+                      onClick={this.toggleMenuVisible}
+                    >
+                      Personal
                     </a>
                   </li>
                   <li className={styles.auth__item}>
