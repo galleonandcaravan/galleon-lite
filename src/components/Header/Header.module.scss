@@ -1,0 +1,105 @@
+.header {
+  position: relative;
+  padding-top: 3rem;
+  color: #000000;
+  z-index: 11;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
+}
+
+.logo {
+  width: 9.1rem;
+  max-width: 91px;
+  cursor: pointer;
+}
+
+.logo_mobile {
+  display: none;
+}
+
+.container {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-end;
+  z-index: 5;
+}
+
+.menu {
+  line-height: 1;
+}
+
+.menu__item {
+  display: inline-block;
+  color: #000000;
+  font-weight: 500;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  &.active {
+    color: rgba(0, 0, 0, 0.3);
+
+    a:hover {
+      border-bottom: none;
+    }
+  }
+
+  & + & {
+    margin-left: 1.5rem;
+  }
+}
+
+.auth {
+  position: relative;
+  line-height: 1;
+}
+
+.auth__item {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+
+  a:hover {
+    border-bottom: 1px solid;
+  }
+
+  & + & {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .logo {
+    max-width: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .auth {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo {
+    display: none;
+  }
+
+  .logo_mobile {
+    display: block;
+    max-width: 60px;
+    width: 8rem;
+  }
+}

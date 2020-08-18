@@ -1,0 +1,14 @@
+#page-contact .main-content {
+  margin-top: -4.5rem;
+}
+
+.contacts__text {
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1023px) {
+  #page-contact .main-content {
+    margin-top: 0;
+  }
+}

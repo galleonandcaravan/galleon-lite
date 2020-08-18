@@ -1,0 +1,36 @@
+.gc-line-mobile {
+  position: relative;
+  top: 0;
+  left:  0;
+  right: 0;
+  z-index: 4;
+}
+
+.gc-line-mobile__g,
+.gc-line-mobile__c {
+  position: relative;
+  height: 10rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  margin: 0 auto;
+  background-position: center center;
+}
+
+.gc-line-mobile__g {
+  background-image: url('./images/g.svg');
+}
+
+.gc-line-mobile__c {
+  background-image: url('./images/c.svg');
+}
+
+.gc-line-mobile__line {
+  margin: 3.2rem 0;
+  left: 50%;
+  transform: translateX(-.5rem);
+  height: 52rem;
+  width: 1rem;
+  position: relative;
+  background-color: #000000;
+}
