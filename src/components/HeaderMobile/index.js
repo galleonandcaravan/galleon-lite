@@ -146,10 +146,14 @@ class HeaderMobile extends Component {
                 </ul>
 
                 <div className={styles.copyright}>
-                  Galleon & Caravan, GC Lite & GC Pro are trading names of
-                  Galcar Limited, a company registered in England & Wales
-                  (no. 11656491) and whose registered office is at Unit 15, 1
-                  Bramshaw Road, London, E9 5BF.
+                  Galcar Limited (t/a GC Lite) is a company registered in England and
+                  Wales (registered no. 11656491). GC Lite’s Payment and Foreign
+                  Currency Exchange Services are provided by Currency Cloud Limited
+                  (registered no. 06323311) and whose office is at Stewardship
+                  Building, 1st Floor, 12 Steward Street, London, E1 6FQ.
+                  The Currency Cloud Limited is Authorised and Regulated by the
+                  Financial Conduct Authority under the Electronic Money Regulations
+                  2011 for the issuing of electronic money. FCA registration no. 900100.
                 </div>
               </div>
             </div>
