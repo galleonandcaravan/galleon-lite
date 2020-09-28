@@ -136,6 +136,15 @@
   }
 }
 
+@media screen and (min-width: 720px) {
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .modal {
     position: fixed;
@@ -146,7 +155,7 @@
     width: 100vw;
     height: 100vh;
     transform: none;
-    background: black;
+    background: white;
     z-index: 10;
     padding-top: 40px;
     margin-top: 0;

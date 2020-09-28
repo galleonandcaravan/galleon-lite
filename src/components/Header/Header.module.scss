@@ -156,13 +156,21 @@
 }
 
 @media screen and (max-width: 720px) {
+  .header {
+    padding-top: 2.5rem;
+  }
+
+  .container {
+    height: auto;
+  }
+
   .logo {
     display: none;
   }
 
   .logo_mobile {
     display: block;
-    max-width: 60px;
-    width: 8rem;
+    max-width: 6rem;
+    width: 6rem;
   }
 }
