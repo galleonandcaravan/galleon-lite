@@ -20,8 +20,8 @@ export const PAGES_IMAGES = {
 };
 
 export const HEADER_AUTH_LINKS = {
-  REGISTER: 'http://galcarlite.paydirect.io/registrations/individuals',
-  REGISTER_BUSINESS: 'http://galcarlite.paydirect.io/registrations/corporates',
-  REGISTER_PERSONAL: 'http://galcarlite.paydirect.io/registrations/individuals',
+  REGISTER: 'https://onboarding.paydirect.io/galleon&caravan/forms/individual',
+  REGISTER_BUSINESS: 'https://onboarding.paydirect.io/galleon&caravan/forms/corporate',
+  REGISTER_PERSONAL: 'https://onboarding.paydirect.io/galleon&caravan/forms/individual',
   LOGIN: 'http://galcarlite.paydirect.io/',
 };
